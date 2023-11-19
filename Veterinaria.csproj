@@ -265,9 +265,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Img\Black and White Minimalist Simple Hand drawn Animated Scrapbook Subscribe YouTube Intro.mp4" />
-    <Content Include="Img\Doctor.jpg" />
-    <Content Include="Img\gato.png" />
     <Content Include="Img\HOME-ZAMUDIO-12.png" />
+    <Content Include="Img\icons8-animal-care-68 %281%29.png" />
+    <Content Include="Img\icons8-animal-care-68 %282%29.png" />
+    <Content Include="Img\icons8-animal-care-68.png" />
     <Content Include="Img\icons8-bathtub-96.png" />
     <Content Include="Img\icons8-dog-collar-50.png" />
     <Content Include="Img\icons8-pills-64.png" />
@@ -278,7 +279,6 @@
     <Content Include="Img\p.jpg" />
     <Content Include="Img\perritos.jpg" />
     <Content Include="Img\perro-fondo-rojo_106745-1285.jpg" />
-    <Content Include="Img\perro.png" />
     <Content Include="Img\WhatsApp Image 2023-10-22 at 3.43.04 PM.jpeg" />
     <Content Include="Img\WhatsApp Image 2023-10-22 at 3.52.13 PM.jpeg" />
     <Content Include="Img\WhatsApp Image 2023-10-22 at 3.57.40 PM.jpeg" />
@@ -294,6 +294,10 @@
       <DependentUpon>VeterinaryDB.edmx</DependentUpon>
       <LastGenOutput>VeterinaryDB.cs</LastGenOutput>
     </Content>
+    <Content Include="Paginas\Categoria.html" />
+    <Content Include="Paginas\Cliente.html" />
+    <Content Include="Paginas\Doctor.html" />
+    <Content Include="Paginas\Estado.html" />
     <Content Include="Paginas\Estilos\adminlte.css" />
     <Content Include="Paginas\Estilos\adminlte.min.css" />
     <Content Include="Paginas\Estilos\all.min.css" />
@@ -329,18 +333,39 @@
     <Content Include="Paginas\Estilos\webfonts\fa-brands-400.svg" />
     <Content Include="Paginas\Estilos\webfonts\fa-regular-400.svg" />
     <Content Include="Paginas\Estilos\webfonts\fa-solid-900.svg" />
+    <Content Include="Paginas\ExamenMedico.html" />
+    <Content Include="Paginas\Factura.html" />
     <Content Include="Paginas\Home.html" />
+    <Content Include="Paginas\Hospitalizacion.html" />
     <Content Include="Paginas\Mascotas.html" />
     <Content Include="Paginas\Menu.html" />
     <Content Include="Paginas\Pagina1.html" />
     <Content Include="Paginas\Pagina2.html" />
     <Content Include="Paginas\PaginaBase.html" />
     <Content Include="Paginas\Product.html" />
+    <Content Include="Paginas\Especie.html" />
+    <Content Include="Paginas\RegistroMascotas.html" />
+    <Content Include="Paginas\Scripts\Categoria.js" />
+    <Content Include="Paginas\Scripts\Cliente.js" />
+    <Content Include="Paginas\Scripts\Doctor.js" />
+    <Content Include="Paginas\Scripts\Estado.js" />
+    <Content Include="Paginas\Scripts\ExamenMedico.js" />
+    <Content Include="Paginas\Scripts\Factura.js" />
     <Content Include="Paginas\Scripts\Home.js" />
+    <Content Include="Paginas\Scripts\Hospitalizacion.js" />
     <Content Include="Paginas\Scripts\Mascotas.js" />
+    <Content Include="Paginas\Scripts\menu.js" />
     <Content Include="Paginas\Scripts\Pagina1.js" />
     <Content Include="Paginas\Scripts\Pagina2.js" />
     <Content Include="Paginas\Scripts\Product.js" />
+    <Content Include="Paginas\Scripts\Especie.js" />
+    <Content Include="Paginas\Scripts\RegistroMascota.js" />
+    <Content Include="Paginas\Scripts\ServiciosEsteticos.js" />
+    <Content Include="Paginas\Scripts\ServiciosMedicos.js" />
+    <Content Include="Paginas\Scripts\Vacunas.js" />
+    <Content Include="Paginas\ServiciosEstetico.html" />
+    <Content Include="Paginas\ServiciosMedico.html" />
+    <Content Include="Paginas\Vacunas.html" />
     <Content Include="Scripts\adminlte.js" />
     <Content Include="Scripts\adminlte.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -567,6 +592,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Data\" />
     <Folder Include="Views\Products\" />
     <Folder Include="View\" />

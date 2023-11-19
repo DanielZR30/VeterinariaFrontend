@@ -19,39 +19,73 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">MASCOTAS</h3>
+                            <h3 class="card-title">EXAMEN MÉDICO</h3>
                         </div>
                         <form id="frmIncapacidades">
                             <div class="card-body">
                                 <div class="card card-gray-dark">
                                     <div class="card-header">
-                                        <h3 class="card-title">REGISTRAR</h3>
+                                        <h3 class="card-title">DATOS EXAMEN MÉDICO</h3>
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtNombre">Nombre Mascota</label>
-                                                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
+                                                    <label for="txtExamenMedico">ID Examen Médico</label>
+                                                    <input type="text" class="form-control" id="txtExamenMedico" placeholder="Examen Médico">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtNombreEspecie">Especie</label>
-                                                    <input type="text" class="form-control" id="txtNombreEspecie" placeholder="Nombre ">
+                                                    <label for="txtFecha">Fecha</label>
+                                                    <input type="date" class="form-control" id="txtFecha" placeholder="Fecha">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtEdad">Edad</label>
-                                                    <input type="number" class="form-control" id="txtEdad" placeholder="Edad">
+                                                    <label for="txtEstado">Estado</label>
+                                                    <input type="text" class="form-control" id="txtEstado" placeholder="Estado">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtPeso">Peso</label>
-                                                    <input type="text" class="form-control" id="txtPeso" placeholder="Peso">
+                                                    <label for="txtDescripcion">Descripción</label>
+                                                    <input type="text" class="form-control" id="txtDescripcion" placeholder="Descripción">
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tabla de categorias-->
+                                <div class="card-body">
+                                    <div class="card card-gray-dark">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Categoría</th>
+                                                            <th scope="col">Descripción</th>
+                                                            <th scope="col">Fecha de Creación</th>
+                                                            <th scope="col">Fecha de modificación</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td colspan="2">Larry the Bird</td>
+                                                            <td>@twitter</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -82,17 +116,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <div id="dvMensaje" class=""></div>
-                            </div>
-                        </form>
                     </div>
+                    <div class="card-footer">
+                        <div id="dvMensaje" class=""></div>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <script src="../Scripts/jquery-3.4.1.min.js"></script>
     <script src="../Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/Mascotas.js"></script>
+    <script src="Scripts/ExamenMedico.js"></script>
 </body>
 </html>
