@@ -2,29 +2,34 @@
 jQuery(function () {
     $("#dvMenu").load("../Paginas/Menu.html")
 
-    $("#btnInsertar").on("click", function () {
-        InsertarCategoria()
-    })
-})
+    $("#btnBuscar").on("click", function () {
+        BuscarProductosC();
+    });
 
-async function InsertarCategoria() {
-    let descripcion = $("#txtDescripcionCatergoria").val();
+    $("#btnComprar").on("click", function () {
+        ComprarProducto();
+    });
+});
 
-    let Categoria = {
-        CategoryDescription: descripcion
+async function BuscarProductosC() {
+    let CategoriaS = $("#cboCategoria").val();
+
+    if (CategoriaS === "") {
+        alert("Por favor, selecciona una categoría")
+        return;
     }
 
     try {
-        const Respuesta = await fetch("http://localhost:44385/api/categories/create",
+        const Respuesta = await fetch("http://localhost:44385/api/productos/BuscarCategoria" + CategoriaS
             {
-                method: "POST",
+                method: "GET",
                 mode: "cors",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(categoria)
             });
-        const Rpta = await Respuesta.json();
+        const preoductos = await Respuesta.json();
         //Se presenta la respuesta en el div mensaje
         $("#dvMensaje").html(Rpta);
     }
@@ -32,4 +37,8 @@ async function InsertarCategoria() {
         //Se presenta la respuesta en el div mensaje
         $("#dvMensaje").html(error);
     }
+}
+
+async function ComprarP() {
+
 }
