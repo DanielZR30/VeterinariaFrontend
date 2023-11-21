@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMPLEADOS</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link href="Estilos/css/all.min.css" rel="stylesheet" />
+    <link href="Estilos/adminlte.min.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12" id="dvMenu">
+                </div>
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">ESPECIE</h3>
+                        </div>
+                        <form id="frmIncapacidades">
+                            <div class="card-body">
+                                <div class="card card-gray-dark">
+                                    <div class="card-header">
+                                        <h3 class="card-title">DATOS ESPECIE</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="txtIdEspecie">Dueño de la Mascota</label>
+                                                <select id="cboCategoria" class="form-control">
+                                                    <option value=" ">Seleccionar una opción</option>
+                                                    <option value="1b60d665-96c9-467d-81a9-6c5579234741">Melissa Naranjo</option>
+                                                    <option value="aa6b7a23-be83-4eb4-af7f-808bcb55edb4">John Doe</option>
+                                                    <option value="bcc8dcc5-6485-40ee-bf99-fda3712ee31f">Jose Cordoba</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnBuscar" class="btn-block btn-lg btn-primary">BUSCAR</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tabla de categorias-->
+                                <div class="card-body">
+                                    <div class="card card-gray-dark">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Nombre De La Mascota</th>
+                                                            <th scope="col">Edad</th>
+                                                            <th scope="col">Peso</th>
+                                                            <th scope="col">Especie</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <!--<tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                        </tr>
+                                                        <tr>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td colspan="2">Larry the Bird</td>
+                                                            <td>@twitter</td>
+                                                        </tr>
+                                                    </tbody>-->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="card card-danger">
+                                    <div class="card-header">
+                                        <h3 class="card-title">PROCESO</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnActualizar" class="btn-block btn-lg btn-primary">ACTUALIZAR</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnEliminar" class="btn-block btn-lg btn-primary">ELIMINAR</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-footer">
+                        <div id="dvMensaje" class=""></div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/Especie.js"></script>
+</body>
+</html>

@@ -31,15 +31,22 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="txtCategoria">ID Categoria</label>
-                                                    <input type="text" class="form-control" id="txtCategoria" placeholder="Categoría">
+                                                    <label for="txtCategoria">Categoria</label>
+                                                    <select id="cboCategoria" class="form-control">
+                                                        <option value=" ">Seleccionar una opción</option>
+                                                        <option value="753F8107-C1A4-4DE0-9296-3172BE326A89">Jueguetes Para Gatos</option>
+                                                        <option value="b7997918-81ef-4508-b676-c3518549c6c9">Servicios</option>
+                                                        <option value="02C12E72-A5DF-4DEA-8AB5-3C7E8BEF2F5C">Hotelería Para Perros</option>
+                                                        <option value="E5095DA1-48B1-4B7A-98BA-697E5D1B7EEB">Juguetes Para Perros</option>
+                                                        <option value="E73ACDFB-912A-4B30-B55D-96074F4D65E4">Accesorios Para Animales De Granjas</option>
+                                                        <option value="C62F237F-D791-4A7E-97D1-A0601A2FE4CD">Accesorios Para Perros</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="txtDescripcion">Descripcion</label>
-                                                    <input type="text" class="form-control" id="txtDescripcionCategoria" placeholder="Nombre">
-                                                </div>
+                                            <!--button de buscar-->
+                                            <div class="col-md-3">
+                                                <br />
+                                                <button type="button" id="btnBuscar" class="btn-block btn-lg btn-primary">BUSCAR</button>
                                             </div>
                                         </div>
                                     </div>
@@ -52,65 +59,34 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th scope="col">Categoría</th>
+                                                            <th scope="col">Nombre</th>
                                                             <th scope="col">Descripción</th>
-                                                            <th scope="col">Fecha de Creación</th>
-                                                            <th scope="col">Fecha de modificación</th>
+                                                            <th scope="col">Precio</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">3</th>
-                                                            <td colspan="2">Larry the Bird</td>
-                                                            <td>@twitter</td>
-                                                        </tr>
-                                                    </tbody>
+                                                    <!--Button Comprar-->
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <br />
+                                                                <button type="button" id="btnComprar" class="btn-block btn-lg btn-primary">Comprar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card-danger">
-                                    <div class="card-header">
-                                        <h3 class="card-title">PROCESO</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <br />
-                                                <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <br />
-                                                <button type="button" id="btnActualizar" class="btn-block btn-lg btn-primary">ACTUALIZAR</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <br />
-                                                <button type="button" id="btnEliminar" class="btn-block btn-lg btn-primary">ELIMINAR</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <br />
-                                                <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                     </div>
-                    <div class="card-footer">
-                        <div id="dvMensaje" class=""></div>
-                    </div>
-                    </form>
                 </div>
+                <div class="card-footer">
+                    <div id="dvMensaje" class=""></div>
+                </div>
+                </form>
             </div>
+        </div>
         </div>
     </section>
     <script src="../Scripts/jquery-3.4.1.min.js"></script>
