@@ -264,7 +264,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Img\Animales.jpg" />
     <Content Include="Img\Black and White Minimalist Simple Hand drawn Animated Scrapbook Subscribe YouTube Intro.mp4" />
+    <Content Include="Img\Consulta3.jpg" />
+    <Content Include="Img\EspecieT2.jpg" />
     <Content Include="Img\HOME-ZAMUDIO-12.png" />
     <Content Include="Img\icons8-animal-care-68 %281%29.png" />
     <Content Include="Img\icons8-animal-care-68 %282%29.png" />
