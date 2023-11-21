@@ -337,6 +337,7 @@
     <Content Include="Paginas\Factura.html" />
     <Content Include="Paginas\Home.html" />
     <Content Include="Paginas\Hospitalizacion.html" />
+    <Content Include="Paginas\MascotaEspecie.html" />
     <Content Include="Paginas\Mascotas.html" />
     <Content Include="Paginas\Menu.html" />
     <Content Include="Paginas\Pagina1.html" />
@@ -353,6 +354,7 @@
     <Content Include="Paginas\Scripts\Factura.js" />
     <Content Include="Paginas\Scripts\Home.js" />
     <Content Include="Paginas\Scripts\Hospitalizacion.js" />
+    <Content Include="Paginas\Scripts\MascotaEspecie.js" />
     <Content Include="Paginas\Scripts\Mascotas.js" />
     <Content Include="Paginas\Scripts\menu.js" />
     <Content Include="Paginas\Scripts\Pagina1.js" />
