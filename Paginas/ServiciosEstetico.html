@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EMPLEADOS</title>
+    <title>SERVICIOS ESTETICOS</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link href="Estilos/css/all.min.css" rel="stylesheet" />
@@ -31,25 +31,41 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtSericioEsteticoo">ID Servicio Estético</label>
-                                                    <input type="text" class="form-control" id="txtSericioEstetico" placeholder="Servicio Estético">
+                                                    <label for="txtNombreMacota">Nombre Macota</label>
+                                                    <select id="cboNombreMacota" class="form-control">
+                                                        <option value="a60cf517-a07e-4802-8c5e-8eeb9252c01a">Docky</option>
+                                                        <option value="0b142365-47ec-4bfa-a899-961d779a8de2">Maxi</option>
+                                                        <option value="c923c3a6-be6c-4b73-8e65-aa0c8256a023">Fluffy</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtFechaServicioEstética">Fecha Servicio Estética</label>
-                                                    <input type="text" class="form-control" id="txtFechaServicioEstética" placeholder="Nombre">
+                                                    <label for="cboDoctor">Doctor </label>
+                                                    <select id="cboDoctor" class="form-control">
+                                                        <option value="a60cf517-a07e-4802-8c5e-8eeb9252c01a">Maria Gonzalez</option>
+                                                        <option value="0b142365-47ec-4bfa-a899-961d779a8de2">Pedro Rodriguez</option>
+                                                        <option value="c923c3a6-be6c-4b73-8e65-aa0c8256a023">Juan Perez</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="txtDescripcionServicio">Descripción Del Servicio Estético</label>
+                                                    <label for="txtDescripcionServicio">Fecha</label>
+                                                    <input type="date" class="form-control" id="txtDescripcionServicio" placeholder="Descripción del servicio estético">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="txtDescripcionServicio">Descripción</label>
                                                     <input type="text" class="form-control" id="txtDescripcionServicio" placeholder="Descripción del servicio estético">
                                                 </div>
                                             </div>
                                         </div>
+                                        </div>
                                     </div>
-                                </div>
                                 <!--tabla de categorias-->
                                 <div class="card-body">
                                     <div class="card card-gray-dark">
@@ -58,24 +74,15 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
+                                                            <th scope="col">Nombre Mascota</th>
+                                                            <th scope="col">Doctor</th>
+                                                            <th scope="col">Fecha</th>
                                                             <th scope="col">Descripción</th>
-                                                            <th scope="col">Fecha de Creación</th>
-                                                            <th scope="col">Fecha de modificación</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                        </tr>
-                                                        <tr>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">3</th>
-                                                            <td colspan="2">Larry the Bird</td>
-                                                            <td>@twitter</td>
+                                                        
                                                         </tr>
                                                     </tbody>
                                                 </table>

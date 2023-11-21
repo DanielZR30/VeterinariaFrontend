@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EMPLEADOS</title>
+    <title>CONSULTAR MASCOTA</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link href="Estilos/css/all.min.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">REGISTRAR MASCOTAS</h3>
+                            <h3 class="card-title">CONSULTAR MASCOTAS</h3>
                         </div>
                         <form id="frmIncapacidades">
                             <div class="card-body">
@@ -29,35 +29,33 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="txtNombre">Nombre Mascota</label>
-                                                    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
+                                                    <label for="txtEspecie">Especie</label>
+                                                    <select id="cboEspecie" class="form-control">
+                                                        <option value="d9a8a462-7166-4bd9-8120-1193ca25196d">Caballo</option>
+                                                        <option value="c7fc6602-3282-4704-b417-2861dbcde196">Perico</option>
+                                                        <option value="0dd40356-3413-4ec4-b93c-576f279b4bc1">Gato</option>
+                                                        <option value="1d04d194-be95-4576-b8d5-70929e3ab34a">Oveja</option>
+                                                        <option value="1d887cf2-55e7-4238-9ab4-7e93c87ebf5e">Hamster</option>
+                                                        <option value="1f7b91d8-4a48-4359-a7e3-d4f44bc1dc60">Loro</option>
+                                                        <option value="6d2e8798-24c7-4589-afe7-e147ecc2e343">Serpient</option>
+                                                        <option value="73a8aea3-c894-4e5f-a795-f0e9ae93f8e2">Perro</option>
+                                                        <option value="3de70e87-7fda-40c2-a84d-f6d483f9965f">Vaca</option>
+                                                        <option value="0f164928-310b-4897-936a-fbb8e4d33eec">Pez</option>
+                                                    </select>
+                                                 </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <br />
+                                                    <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="txtNombreEspecie">Especie</label>
-                                                    <input type="text" class="form-control" id="txtNombreEspecie" placeholder="Nombre ">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="txtEdad">Edad</label>
-                                                    <input type="number" class="form-control" id="txtEdad" placeholder="Edad">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label for="txtPeso">Peso</label>
-                                                    <input type="text" class="form-control" id="txtPeso" placeholder="Peso">
-                                                </div>
-                                            </div>
-
                                         </div>
-                                    </div>
+                                     </div>
                                 </div>
-                                <!--tabla de categorias-->
+                                <!--tabla de MASCOTAS-->
                                 <div class="card-body">
                                     <div class="card card-gray-dark">
                                         <div class="card-body">
@@ -65,18 +63,16 @@
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
-                                                            <th scope="col">NOMBRE</th>
-                                                            <th scope="col">Descripción</th>
-                                                            <th scope="col">Fecha de Creación</th>
+                                                            <th scope="col">Nombre Mascota</th>
+                                                            <th scope="col">Nombre del Dueño</th>
+                                                            <th scope="col">Edad</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row">1</th>
+                                                            <th scope="row"></th>
                                                             <th></th>
-                                                            <th scope="row">
-                                                                <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
-                                                            </th>
+                                                            <th scope="row"> </th>
                                                         </tr>
     
                                                     </tbody>
@@ -92,21 +88,17 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <br />
                                                 <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <br />
                                                 <button type="button" id="btnActualizar" class="btn-block btn-lg btn-primary">ACTUALIZAR</button>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-4">
                                                 <br />
                                                 <button type="button" id="btnEliminar" class="btn-block btn-lg btn-primary">ELIMINAR</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <br />
-                                                <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
                                             </div>
                                         </div>
                                     </div>
